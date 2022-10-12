@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: irsa-test
+  annotations:
+    eks.amazonaws.com/role-arn: input # annotation을 통해 role arn 작성 
+   
