@@ -65,7 +65,7 @@ curl -L https://git.io/get_helm.sh | bash -s -- --version v3.8.2
 
 helm repo add stable https://itzg.github.io/minecraft-server-charts/
 helm fetch stable/minecraft --untar
-/usr/bin/cp values.yaml minecraft/values.yaml
+/bin/cp values.yaml minecraft/values.yaml
 kubectl create ns mine-release
 
 helm install mine-release --namespace=mine-release ./minecraft -f ./minecraft/values.yaml
